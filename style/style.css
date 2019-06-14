@@ -11,9 +11,11 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #3A1C71;
-    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
-    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+    background-color: rgb(2, 0, 34);
+    background: url("../media/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #main-menu {
@@ -21,23 +23,23 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.473);
+    background: rgba(0, 0, 0, 0.836);
     border-radius: 8px;
-    padding: 5vh;
+    padding: 10vh;
     user-select: none;
     cursor: default;
     text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.144);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.521);
 }
 
 #main-menu-line01 {
     font-size: 7vh;
-    color: white;
+    color: rgb(0, 153, 255);
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #main-menu-line02 {
     font-size: 3vh;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans Condensed', sans-serif;
 }
