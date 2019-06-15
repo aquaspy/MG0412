@@ -32,14 +32,30 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.521);
 }
 
-#main-menu-line01 {
+#main-menu-title {
     font-size: 7vh;
     color: rgb(0, 153, 255);
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#main-menu-line02 {
+#main-menu-nb{
+    list-style: none;
     font-size: 3vh;
     color: rgb(255, 255, 255);
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main-menu-nb-line-enable{
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.main-menu-nb-line-enable:hover{
+    color: rgb(0, 153, 255);
+}
+
+.main-menu-nb-line-disable{
+    color: rgb(88, 88, 88);
+    transition: color 0.3s ease;
 }
