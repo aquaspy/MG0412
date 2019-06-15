@@ -8,7 +8,30 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='style/style-fonts.css'>
     <link rel='stylesheet' type='text/css' href='style/style.css'>
+    <script src="script/sweetalert2.all.min.js"></script>
 </head>
+  <script>
+  function credito(){
+   Swal.fire({
+  text: 'Cŕeditos do projeto',
+  showCloseButton: true,
+  imageUrl: 'media/hannausage.jpg',
+  imageHeight: 300,
+  imageAlt: 'Hanna é top',
+   html:
+    'You can use <b>bold text</b>, ' +
+    '<a href="//github.com">links</a> ' +
+    'and other HTML tags',
+  showCancelButton: true,
+  focusConfirm: true,
+  allowEscapeKey: true,
+  confirmButtonText:
+    'bó dançar com a manopla kkkkk',
+  cancelButtonText:
+     'Bó não :( ',
+})
+}
+  </script>
 
 <body>
     <div id="app">
@@ -19,6 +42,9 @@
                 <li class="main-menu-nb-line-disable" id="main-menu-nb-line02">Continuar</li>
                 <li class="main-menu-nb-line-enable" id="main-menu-nb-line03">Níveis</li>
                 <li class="main-menu-nb-line-enable" id="main-menu-nb-line04">Resetar</li>
+                <li class="main-menu-nb-line-enable" id="main-menu-nb-line05" onclick="credito()">Créditos</li>
+
+              </div>
             </ul>
         </div>
     </div>
