@@ -39,6 +39,8 @@ body {
 }
 
 #main-menu-nb{
+    padding: 0;
+    text-align: center;
     list-style: none;
     font-size: 3vh;
     color: rgb(255, 255, 255);
