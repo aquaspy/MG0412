@@ -8,12 +8,14 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' href='style/style-fonts.css'>
   <link rel='stylesheet' type='text/css' href='style/style.css'>
+  <script src="scripts/jQuery.js"></script>
   <script src="scripts/sweetalert2.all.min.js"></script>
 </head>
+
 <script>
   function credito() {
     Swal.fire({
-      title: 'Cŕeditos do projeto',
+      title: 'Cŕeditos do projeto:',
       showCloseButton: true,
       imageUrl: 'media/kkkkkkkkkkkkkkkkkkkkk.jpg',
       imageAlt: 'Hanna é top',
@@ -28,7 +30,9 @@
 </script>
 
 <body>
+
   <div id="app">
+    <div id="fadeBlackScreen"></div>
     <div id="main-menu">
       <h1 id="main-menu-title">MG0412</h1>
       <ul id="main-menu-nb">
@@ -37,11 +41,16 @@
         <li class="main-menu-nb-line-enable" id="main-menu-nb-line03">Níveis</li>
         <li class="main-menu-nb-line-enable" id="main-menu-nb-line04">Resetar</li>
         <li class="main-menu-nb-line-enable" id="main-menu-nb-line05" onclick="credito()">Créditos</li>
-
+      </ul>
     </div>
-    </ul>
+
+    <div id="gameScreen" style="display: none;">
+      <canvas></canvas>
+    </div>
+
+    <script src="scripts/mainScript.js"></script>
   </div>
-  </div>
+
 </body>
 
 </html>

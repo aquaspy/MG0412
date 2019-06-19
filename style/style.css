@@ -18,6 +18,15 @@ body {
     background-size: cover;
 }
 
+#fadeBlackScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    pointer-events: none;
+    z-index: 9999999;
+}
+
 #main-menu {
     position: fixed;
     left: 50%;
@@ -38,7 +47,7 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#main-menu-nb{
+#main-menu-nb {
     padding: 0;
     text-align: center;
     list-style: none;
@@ -47,17 +56,17 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.main-menu-nb-line-enable{
+.main-menu-nb-line-enable {
     cursor: pointer;
     color: white;
     transition: color 0.3s ease;
 }
 
-.main-menu-nb-line-enable:hover{
+.main-menu-nb-line-enable:hover {
     color: rgb(0, 153, 255);
 }
 
-.main-menu-nb-line-disable{
+.main-menu-nb-line-disable {
     color: rgb(88, 88, 88);
     transition: color 0.3s ease;
 }
