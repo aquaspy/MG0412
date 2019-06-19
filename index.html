@@ -2,52 +2,46 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <title>MG0412</title>
-    <link rel="shortcut icon" href="icons/icon.ico" />
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='style/style-fonts.css'>
-    <link rel='stylesheet' type='text/css' href='style/style.css'>
-    <script src="scripts/sweetalert2.all.min.js"></script>
+  <meta charset='utf-8'>
+  <title>MG0412</title>
+  <link rel="shortcut icon" href="icons/icon.ico" />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' href='style/style-fonts.css'>
+  <link rel='stylesheet' type='text/css' href='style/style.css'>
+  <script src="scripts/sweetalert2.all.min.js"></script>
 </head>
-  <script>
-  function credito(){
-   Swal.fire({
-  text: 'Cŕeditos do projeto',
-  showCloseButton: true,
-  imageUrl: 'media/hannausage.jpg',
-  imageHeight: 300,
-  imageAlt: 'Hanna é top',
-   html:
-    'You can use <b>bold text</b>, ' +
-    '<a href="//github.com">links</a> ' +
-    'and other HTML tags',
-  showCancelButton: true,
-  focusConfirm: true,
-  allowEscapeKey: true,
-  confirmButtonText:
-    'bó dançar com a manopla kkkkk',
-  cancelButtonText:
-     'Bó não :( ',
-})
-}
-  </script>
+<script>
+  function credito() {
+    Swal.fire({
+      title: 'Cŕeditos do projeto',
+      showCloseButton: true,
+      imageUrl: 'media/kkkkkkkkkkkkkkkkkkkkk.jpg',
+      imageAlt: 'Hanna é top',
+      html: 'Criado por Augusto e Lucas Gomes',
+      footer: 'Sim, usamos o Hannah Montana Linux para criar esse incrível jogo.',
+      showCancelButton: false,
+      focusConfirm: true,
+      allowEscapeKey: true,
+      confirmButtonText: 'Ok'
+    })
+  }
+</script>
 
 <body>
-    <div id="app">
-        <div id="main-menu">
-            <h1 id="main-menu-title">MG0412</h1>
-            <ul id="main-menu-nb">
-                <li class="main-menu-nb-line-enable" id="main-menu-nb-line01">Novo Jogo</li>
-                <li class="main-menu-nb-line-disable" id="main-menu-nb-line02">Continuar</li>
-                <li class="main-menu-nb-line-enable" id="main-menu-nb-line03">Níveis</li>
-                <li class="main-menu-nb-line-enable" id="main-menu-nb-line04">Resetar</li>
-                <li class="main-menu-nb-line-enable" id="main-menu-nb-line05" onclick="credito()">Créditos</li>
+  <div id="app">
+    <div id="main-menu">
+      <h1 id="main-menu-title">MG0412</h1>
+      <ul id="main-menu-nb">
+        <li class="main-menu-nb-line-enable" id="main-menu-nb-line01">Novo Jogo</li>
+        <li class="main-menu-nb-line-disable" id="main-menu-nb-line02">Continuar</li>
+        <li class="main-menu-nb-line-enable" id="main-menu-nb-line03">Níveis</li>
+        <li class="main-menu-nb-line-enable" id="main-menu-nb-line04">Resetar</li>
+        <li class="main-menu-nb-line-enable" id="main-menu-nb-line05" onclick="credito()">Créditos</li>
 
-              </div>
-            </ul>
-        </div>
     </div>
+    </ul>
+  </div>
+  </div>
 </body>
 
 </html>
