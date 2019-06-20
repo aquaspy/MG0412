@@ -77,16 +77,39 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 430px;
+    width: 320px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.521);
     text-align: center;
 }
 
-.squareS{
+.squareNS{
     display: inline-block;
     vertical-align: top;
     background: rgb(8, 8, 8);
     width: 100px;
     height: 100px;
     margin: 1px;
+}
+
+
+
+.squareS{
+    display: inline-block;
+    vertical-align: top;
+    background: rgb(8, 8, 8);
+    border: solid rgb(255, 255, 255) 1px;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+
+#imagemRef{
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: url("../media/Level01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
