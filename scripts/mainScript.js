@@ -6,11 +6,13 @@ var solvedgame = [
     7, 8, 9,
 ]
 
-var game = [
+var initgame = [
     2, 1, 5,
     4, 3, 6,
     7, 8, 9,
-]
+];
+
+var game = initgame;
 
 function loadGame() {
     $("#main-menu").fadeOut(600);
@@ -114,7 +116,11 @@ window.onload = function () {
 
 setInterval(function(){
     if(game.toString() == solvedgame.toString()){
-       game = [];
-       window.location = "";
+       game = initgame;
+       callGameWin();
     }
 }, 10000);
+
+function callGameWin(){
+    window.location = "";
+}
