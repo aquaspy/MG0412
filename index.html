@@ -31,12 +31,14 @@
 
 <body>
 
+  <script src="scripts/mainScript.js"></script>
+
   <div id="app">
     <div id="fadeBlackScreen"></div>
     <div id="main-menu">
       <h1 id="main-menu-title">MG0412</h1>
       <ul id="main-menu-nb">
-        <li class="main-menu-nb-line-enable" id="main-menu-nb-line01">Novo Jogo</li>
+        <li class="main-menu-nb-line-enable" id="main-menu-nb-line01" onclick="loadGame()">Novo Jogo</li>
         <li class="main-menu-nb-line-disable" id="main-menu-nb-line02">Continuar</li>
         <li class="main-menu-nb-line-enable" id="main-menu-nb-line03">Níveis</li>
         <li class="main-menu-nb-line-enable" id="main-menu-nb-line04">Resetar</li>
@@ -45,10 +47,33 @@
     </div>
 
     <div id="gameScreen" style="display: none;">
-      <canvas></canvas>
+      <div id="gameArea">
+        <div id="squarePos1" class="squareS"></div>
+        <div id="squarePos2" class="squareS"></div>
+        <div id="squarePos3" class="squareS"></div>
+        <div id="squarePos4" class="squareS"></div>
+        <div id="squarePos5" class="squareS"></div>
+
+        <div id="squarePos6" class="squareS"></div>
+        <div id="squarePos7" class="squareS"></div>
+        <div id="squarePos8" class="squareS"></div>
+        <div id="squarePos9" class="squareS"></div>
+        <div id="squarePos10" class="squareS"></div>
+        
+        <div id="squarePos11" class="squareS"></div>
+        <div id="squarePos12" class="squareS"></div>
+        <div id="squarePos13" class="squareS"></div>
+        <div id="squarePos14" class="squareS"></div>
+        <div id="squarePos15" class="squareS"></div>
+
+        <div id="squarePos16" class="squareS"></div>
+        <div id="squarePos17" class="squareS"></div>
+        <div id="squarePos18" class="squareS"></div>
+        <div id="squarePos19" class="squareS"></div>
+        <div id="squarePos20" class="squareS"></div>
+      </div>
     </div>
 
-    <script src="scripts/mainScript.js"></script>
   </div>
 
 </body>

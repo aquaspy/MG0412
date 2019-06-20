@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    user-select: none;
 }
 
 #app {
@@ -69,4 +70,24 @@ body {
 .main-menu-nb-line-disable {
     color: rgb(88, 88, 88);
     transition: color 0.3s ease;
+}
+
+#gameArea{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 530px;
+    background: rgb(5, 0, 53);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.521);
+    text-align: center;
+}
+
+.squareS{
+    display: inline-block;
+    vertical-align: top;
+    background: rgb(8, 8, 8);
+    width: 100px;
+    height: 100px;
+    margin: 1px;
 }
