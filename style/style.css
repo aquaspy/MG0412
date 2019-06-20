@@ -78,7 +78,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 430px;
-    background: rgb(5, 0, 53);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.521);
     text-align: center;
 }
