@@ -106,6 +106,7 @@ function draw() {
 
         }
         draw();
+        checkGameWin();
     });
 
 }
@@ -114,12 +115,12 @@ window.onload = function () {
     $("#fadeBlackScreen").fadeOut(3000);
 }
 
-setInterval(function(){
+function checkGameWin(){
     if(game.toString() == solvedgame.toString()){
-       game = initgame;
-       callGameWin();
-    }
-}, 12000);
+        game = initgame;
+        callGameWin();
+     }
+}
 
 function callGameWin(){
   Swal.fire({
