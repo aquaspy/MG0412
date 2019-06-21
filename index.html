@@ -19,14 +19,17 @@ function credito() {
     showCloseButton: true,
     imageUrl: 'media/Capturar.png',
     imageAlt: 'Hanna é top',
-    html: 'Criado por Augusto e Lucas Gomes',
-    html: '<video src="media/untitled.mp4" controls autoplay width="472" height="264.95" loop>',
-    footer: 'Sim, usamos o Hannah Montana Linux para criar esse incrível jogo.',
+    html: '<video src="media/untitled.mp4" autoplay width="472" height="264.95" loop>',
+    footer: 'Sim, usamos o Hannah Montana Linux para criar esse incrível jogo.\n' +
+    'Créditos: Lucas Gomes e Augusto Magno',
     showCancelButton: false,
     focusConfirm: true,
     allowEscapeKey: true,
     confirmButtonText: 'Ok'
   })
+}
+function back(){
+  window.location = "";
 }
 </script>
 
@@ -50,10 +53,10 @@ function credito() {
     <div id="gameScreen" style="display: none;">
       <div id="imagemRef"></div>
       <div id="gameArea">
-
-
       </div>
+      <button id='back' onclick="back()"> Voltar</button>
     </div>
+
 
   </div>
 

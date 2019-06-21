@@ -94,7 +94,7 @@ function draw() {
 
                 gameCopy[game.indexOf(selectedNumber)] = 9;
                 gameCopy[gameCopy.indexOf(9)] = selectedNumber;
-                
+
 
 
                 game = gameCopy;
@@ -119,8 +119,18 @@ setInterval(function(){
        game = initgame;
        callGameWin();
     }
-}, 10000);
+}, 12000);
 
 function callGameWin(){
-    window.location = "";
+  Swal.fire({
+    title: 'Parabéns!',
+    showCloseButton: true,
+    html: '<video src="media/thanosfinal.mp4" autoplay>',
+    footer: 'Obrigado por jogar!',
+    showCancelButton: false,
+    focusConfirm: true,
+    allowEscapeKey: true,
+    confirmButtonText: 'BOA'
+  })
+    setInterval(function(){ window.location = ""; }, 12000);
 }

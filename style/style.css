@@ -113,3 +113,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#back{
+  position: absolute;
+  left: 0;
+  background-position: center;
+  font-size: 30px;
+  background-color: transparent;
+  color: #FFFF;
+  border-radius: 10px;
+  display: inline-block;
+}
